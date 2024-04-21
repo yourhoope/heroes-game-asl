@@ -99,11 +99,11 @@ class Fight {
     let findWinner = "";
 
     if (this.hero1.hp > 0) {
-      findWinner = this.hero1.name + " won with " + this.hero1.hp + ".";
+      findWinner = this.hero1.name + " won with " + this.hero1.hp + " hp left.";
       console.log(findWinner);
       return findWinner;
     } else if (this.hero2.hp > 0) {
-      findWinner = this.hero2.name + " won with " + this.hero2.hp + ".";
+      findWinner = this.hero2.name + " won with " + this.hero2.hp + " hp left.";
       console.log(findWinner);
       return findWinner;
     } else {
