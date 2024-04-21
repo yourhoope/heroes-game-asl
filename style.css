@@ -1,0 +1,156 @@
+body {
+  background-image: url("assets/op-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  background-color: rgba(61, 53, 53, 0.753);
+  color: rgb(241, 149, 96);
+}
+
+.btns-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 10px 20p;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #e97c3d;
+  box-shadow: 23px -12px 8px 13px rgba(0, 0, 0, 0.1);
+}
+
+.start-fight {
+  display: none;
+}
+
+.heroes-container {
+  display: none;
+  /* background: rgb(235, 218, 165); */
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  width: 200px;
+  flex-basis: 30%;
+  background-color: #eedfbe86;
+  border-radius: 20px;
+}
+
+.hero-avatar {
+  height: 300px;
+  width: 200px;
+  border-radius: 8%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ace {
+  background-image: url("assets/ace-bg.jpg");
+}
+
+.sabo {
+  background-image: url("assets/sabo-bg.png");
+}
+
+.luffy {
+  background-image: url("assets/luffy-bg.png");
+}
+
+.hero-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.show-winner {
+  display: none;
+  align-items: center;
+  background-color: #e97c3dc7;
+  width: 80%;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 700;
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+@media screen and (max-width: 770px) {
+
+  body{
+    background-repeat: repeat;
+  }
+
+  .heroes-container {
+    flex-direction: column;
+  }
+  .hero-container {
+    margin-bottom: 20px;
+  }
+
+  .hero-details{
+    margin-bottom: 20px;
+  }
+
+  .show-winner{
+    width: auto;
+  }
+}
